@@ -12,7 +12,7 @@ part of 'fast_laughs_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FastLaughsEvent {
@@ -66,28 +66,34 @@ class _$FastLaughsEventCopyWithImpl<$Res, $Val extends FastLaughsEvent>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FastLaughsEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
-abstract class _$$InitializeCopyWith<$Res> {
-  factory _$$InitializeCopyWith(
-          _$Initialize value, $Res Function(_$Initialize) then) =
-      __$$InitializeCopyWithImpl<$Res>;
+abstract class _$$InitializeImplCopyWith<$Res> {
+  factory _$$InitializeImplCopyWith(
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InitializeCopyWithImpl<$Res>
-    extends _$FastLaughsEventCopyWithImpl<$Res, _$Initialize>
-    implements _$$InitializeCopyWith<$Res> {
-  __$$InitializeCopyWithImpl(
-      _$Initialize _value, $Res Function(_$Initialize) _then)
+class __$$InitializeImplCopyWithImpl<$Res>
+    extends _$FastLaughsEventCopyWithImpl<$Res, _$InitializeImpl>
+    implements _$$InitializeImplCopyWith<$Res> {
+  __$$InitializeImplCopyWithImpl(
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of FastLaughsEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$Initialize implements Initialize {
-  const _$Initialize();
+class _$InitializeImpl implements Initialize {
+  const _$InitializeImpl();
 
   @override
   String toString() {
@@ -95,9 +101,9 @@ class _$Initialize implements Initialize {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Initialize);
+        (other.runtimeType == runtimeType && other is _$InitializeImpl);
   }
 
   @override
@@ -161,7 +167,7 @@ class _$Initialize implements Initialize {
 }
 
 abstract class Initialize implements FastLaughsEvent {
-  const factory Initialize() = _$Initialize;
+  const factory Initialize() = _$InitializeImpl;
 }
 
 /// @nodoc
@@ -170,7 +176,9 @@ mixin _$FastLaughsState {
   bool get isLoading => throw _privateConstructorUsedError;
   bool get isError => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FastLaughsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FastLaughsStateCopyWith<FastLaughsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -194,6 +202,8 @@ class _$FastLaughsStateCopyWithImpl<$Res, $Val extends FastLaughsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FastLaughsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -219,23 +229,26 @@ class _$FastLaughsStateCopyWithImpl<$Res, $Val extends FastLaughsState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res>
+abstract class _$$InitialImplCopyWith<$Res>
     implements $FastLaughsStateCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<Downloads> videosList, bool isLoading, bool isError});
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$FastLaughsStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$FastLaughsStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FastLaughsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -243,7 +256,7 @@ class __$$_InitialCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? isError = null,
   }) {
-    return _then(_$_Initial(
+    return _then(_$InitialImpl(
       videosList: null == videosList
           ? _value._videosList
           : videosList // ignore: cast_nullable_to_non_nullable
@@ -262,8 +275,8 @@ class __$$_InitialCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial(
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl(
       {required final List<Downloads> videosList,
       required this.isLoading,
       required this.isError})
@@ -288,10 +301,10 @@ class _$_Initial implements _Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Initial &&
+            other is _$InitialImpl &&
             const DeepCollectionEquality()
                 .equals(other._videosList, _videosList) &&
             (identical(other.isLoading, isLoading) ||
@@ -303,18 +316,20 @@ class _$_Initial implements _Initial {
   int get hashCode => Object.hash(runtimeType,
       const DeepCollectionEquality().hash(_videosList), isLoading, isError);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FastLaughsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$_InitialCopyWith<_$_Initial> get copyWith =>
-      __$$_InitialCopyWithImpl<_$_Initial>(this, _$identity);
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
+      __$$InitialImplCopyWithImpl<_$InitialImpl>(this, _$identity);
 }
 
 abstract class _Initial implements FastLaughsState {
   const factory _Initial(
       {required final List<Downloads> videosList,
       required final bool isLoading,
-      required final bool isError}) = _$_Initial;
+      required final bool isError}) = _$InitialImpl;
 
   @override
   List<Downloads> get videosList;
@@ -322,8 +337,11 @@ abstract class _Initial implements FastLaughsState {
   bool get isLoading;
   @override
   bool get isError;
+
+  /// Create a copy of FastLaughsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
-  _$$_InitialCopyWith<_$_Initial> get copyWith =>
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

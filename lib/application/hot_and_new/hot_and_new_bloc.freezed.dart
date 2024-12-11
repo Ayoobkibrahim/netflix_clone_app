@@ -12,7 +12,7 @@ part of 'hot_and_new_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$HotAndNewEvent {
@@ -75,28 +75,34 @@ class _$HotAndNewEventCopyWithImpl<$Res, $Val extends HotAndNewEvent>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of HotAndNewEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
-abstract class _$$loadDateinComingSoonCopyWith<$Res> {
-  factory _$$loadDateinComingSoonCopyWith(_$loadDateinComingSoon value,
-          $Res Function(_$loadDateinComingSoon) then) =
-      __$$loadDateinComingSoonCopyWithImpl<$Res>;
+abstract class _$$loadDateinComingSoonImplCopyWith<$Res> {
+  factory _$$loadDateinComingSoonImplCopyWith(_$loadDateinComingSoonImpl value,
+          $Res Function(_$loadDateinComingSoonImpl) then) =
+      __$$loadDateinComingSoonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$loadDateinComingSoonCopyWithImpl<$Res>
-    extends _$HotAndNewEventCopyWithImpl<$Res, _$loadDateinComingSoon>
-    implements _$$loadDateinComingSoonCopyWith<$Res> {
-  __$$loadDateinComingSoonCopyWithImpl(_$loadDateinComingSoon _value,
-      $Res Function(_$loadDateinComingSoon) _then)
+class __$$loadDateinComingSoonImplCopyWithImpl<$Res>
+    extends _$HotAndNewEventCopyWithImpl<$Res, _$loadDateinComingSoonImpl>
+    implements _$$loadDateinComingSoonImplCopyWith<$Res> {
+  __$$loadDateinComingSoonImplCopyWithImpl(_$loadDateinComingSoonImpl _value,
+      $Res Function(_$loadDateinComingSoonImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of HotAndNewEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$loadDateinComingSoon implements loadDateinComingSoon {
-  const _$loadDateinComingSoon();
+class _$loadDateinComingSoonImpl implements loadDateinComingSoon {
+  const _$loadDateinComingSoonImpl();
 
   @override
   String toString() {
@@ -104,9 +110,10 @@ class _$loadDateinComingSoon implements loadDateinComingSoon {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$loadDateinComingSoon);
+        (other.runtimeType == runtimeType &&
+            other is _$loadDateinComingSoonImpl);
   }
 
   @override
@@ -179,31 +186,34 @@ class _$loadDateinComingSoon implements loadDateinComingSoon {
 }
 
 abstract class loadDateinComingSoon implements HotAndNewEvent {
-  const factory loadDateinComingSoon() = _$loadDateinComingSoon;
+  const factory loadDateinComingSoon() = _$loadDateinComingSoonImpl;
 }
 
 /// @nodoc
-abstract class _$$loadDatainEveryoneWatchingCopyWith<$Res> {
-  factory _$$loadDatainEveryoneWatchingCopyWith(
-          _$loadDatainEveryoneWatching value,
-          $Res Function(_$loadDatainEveryoneWatching) then) =
-      __$$loadDatainEveryoneWatchingCopyWithImpl<$Res>;
+abstract class _$$loadDatainEveryoneWatchingImplCopyWith<$Res> {
+  factory _$$loadDatainEveryoneWatchingImplCopyWith(
+          _$loadDatainEveryoneWatchingImpl value,
+          $Res Function(_$loadDatainEveryoneWatchingImpl) then) =
+      __$$loadDatainEveryoneWatchingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$loadDatainEveryoneWatchingCopyWithImpl<$Res>
-    extends _$HotAndNewEventCopyWithImpl<$Res, _$loadDatainEveryoneWatching>
-    implements _$$loadDatainEveryoneWatchingCopyWith<$Res> {
-  __$$loadDatainEveryoneWatchingCopyWithImpl(
-      _$loadDatainEveryoneWatching _value,
-      $Res Function(_$loadDatainEveryoneWatching) _then)
+class __$$loadDatainEveryoneWatchingImplCopyWithImpl<$Res>
+    extends _$HotAndNewEventCopyWithImpl<$Res, _$loadDatainEveryoneWatchingImpl>
+    implements _$$loadDatainEveryoneWatchingImplCopyWith<$Res> {
+  __$$loadDatainEveryoneWatchingImplCopyWithImpl(
+      _$loadDatainEveryoneWatchingImpl _value,
+      $Res Function(_$loadDatainEveryoneWatchingImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of HotAndNewEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$loadDatainEveryoneWatching implements loadDatainEveryoneWatching {
-  const _$loadDatainEveryoneWatching();
+class _$loadDatainEveryoneWatchingImpl implements loadDatainEveryoneWatching {
+  const _$loadDatainEveryoneWatchingImpl();
 
   @override
   String toString() {
@@ -211,10 +221,10 @@ class _$loadDatainEveryoneWatching implements loadDatainEveryoneWatching {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$loadDatainEveryoneWatching);
+            other is _$loadDatainEveryoneWatchingImpl);
   }
 
   @override
@@ -287,7 +297,7 @@ class _$loadDatainEveryoneWatching implements loadDatainEveryoneWatching {
 }
 
 abstract class loadDatainEveryoneWatching implements HotAndNewEvent {
-  const factory loadDatainEveryoneWatching() = _$loadDatainEveryoneWatching;
+  const factory loadDatainEveryoneWatching() = _$loadDatainEveryoneWatchingImpl;
 }
 
 /// @nodoc
@@ -298,7 +308,9 @@ mixin _$HotAndNewState {
   bool get isLoading => throw _privateConstructorUsedError;
   bool get hasError => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of HotAndNewState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $HotAndNewStateCopyWith<HotAndNewState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -326,6 +338,8 @@ class _$HotAndNewStateCopyWithImpl<$Res, $Val extends HotAndNewState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of HotAndNewState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -356,11 +370,11 @@ class _$HotAndNewStateCopyWithImpl<$Res, $Val extends HotAndNewState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res>
+abstract class _$$InitialImplCopyWith<$Res>
     implements $HotAndNewStateCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -371,12 +385,15 @@ abstract class _$$_InitialCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$HotAndNewStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$HotAndNewStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of HotAndNewState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -385,7 +402,7 @@ class __$$_InitialCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? hasError = null,
   }) {
-    return _then(_$_Initial(
+    return _then(_$InitialImpl(
       commingSoonList: null == commingSoonList
           ? _value._commingSoonList
           : commingSoonList // ignore: cast_nullable_to_non_nullable
@@ -408,8 +425,8 @@ class __$$_InitialCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial(
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl(
       {required final List<HotAndNewData> commingSoonList,
       required final List<HotAndNewData> everyOneWatching,
       required this.isLoading,
@@ -445,10 +462,10 @@ class _$_Initial implements _Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Initial &&
+            other is _$InitialImpl &&
             const DeepCollectionEquality()
                 .equals(other._commingSoonList, _commingSoonList) &&
             const DeepCollectionEquality()
@@ -467,11 +484,13 @@ class _$_Initial implements _Initial {
       isLoading,
       hasError);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of HotAndNewState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$_InitialCopyWith<_$_Initial> get copyWith =>
-      __$$_InitialCopyWithImpl<_$_Initial>(this, _$identity);
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
+      __$$InitialImplCopyWithImpl<_$InitialImpl>(this, _$identity);
 }
 
 abstract class _Initial implements HotAndNewState {
@@ -479,7 +498,7 @@ abstract class _Initial implements HotAndNewState {
       {required final List<HotAndNewData> commingSoonList,
       required final List<HotAndNewData> everyOneWatching,
       required final bool isLoading,
-      required final bool hasError}) = _$_Initial;
+      required final bool hasError}) = _$InitialImpl;
 
   @override
   List<HotAndNewData> get commingSoonList;
@@ -489,8 +508,11 @@ abstract class _Initial implements HotAndNewState {
   bool get isLoading;
   @override
   bool get hasError;
+
+  /// Create a copy of HotAndNewState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
-  _$$_InitialCopyWith<_$_Initial> get copyWith =>
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
